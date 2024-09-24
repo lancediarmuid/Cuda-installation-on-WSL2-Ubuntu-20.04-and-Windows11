@@ -107,3 +107,31 @@ docker run --gpus all -it --name tfgpu -p 8888:8888 -v ${PWD}:/tf/notebooks tens
 ![Text  Description automatically generated](https://raw.githubusercontent.com/ashishpatel26/Cuda-installation-on-WSL2-Ubuntu-20.04-and-Windows11/main/Images/clip_image024.jpg)
 
 ![Graphical user interface, text, application  Description automatically generated](https://raw.githubusercontent.com/ashishpatel26/Cuda-installation-on-WSL2-Ubuntu-20.04-and-Windows11/main/Images/clip_image026.jpg)
+
+**环境变量配置**
+
+1. 查看 CUDA 位置
+
+```
+cd /usr/local
+```
+
+2. 编辑环境变量配置文件：
+``vim ~/.zshrc``
+
+3. 文件末尾添加：
+```
+# cuda
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+export PATH=$PATH:/usr/local/cuda/bin
+```
+
+4. 重新加载 zshrc 文件
+```source ~/.zshrc```
+
+- [CUDA已经安装但nvcc -V显示command not found（Ubuntu20.04LTS系统）
+](https://www.cnblogs.com/ksky-2023/p/17389977.html)
+
+## Docker 加速镜像代理
+- [国内DockerHub镜像加速器还有哪些可用](https://www.wangdu.site/course/2109.html)
+- *目前使用：https://dockerpull.com*
