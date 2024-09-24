@@ -132,6 +132,9 @@ export PATH=$PATH:/usr/local/cuda/bin
 - [CUDA已经安装但nvcc -V显示command not found（Ubuntu20.04LTS系统）
 ](https://www.cnblogs.com/ksky-2023/p/17389977.html)
 
+5. 检查 cuda 安装是否成功
+```nvcc -V```
+
 ## Docker 加速镜像代理
 - [国内DockerHub镜像加速器还有哪些可用](https://www.wangdu.site/course/2109.html)
 - *目前使用：https://dockerpull.com*
