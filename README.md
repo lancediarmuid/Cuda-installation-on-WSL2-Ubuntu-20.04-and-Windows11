@@ -138,3 +138,12 @@ export PATH=$PATH:/usr/local/cuda/bin
 ## Docker 加速镜像代理
 - [国内DockerHub镜像加速器还有哪些可用](https://www.wangdu.site/course/2109.html)
 - *目前使用：https://dockerpull.com*
+
+
+## 安装 PyTorch
+```
+$ mkvirtualenv orbis-cuda
+$ workon orbis-cuda
+$ pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+
+```
